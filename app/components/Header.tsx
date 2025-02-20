@@ -10,7 +10,7 @@ export default function Header({ title }: { title: string }) {
   }
 
   return (
-    <header className="bg-green-700 px-8 py-5 md:px-28 md:py-12 bg-[url('/assets/hero.webp')] bg-center bg-cover relative before:absolute before:inset-0 before:bg-black/40 before:content-['']">
+    <header className="bg-green-700 px-8 py-5 md:px-28 md:py-9 bg-[url('/assets/hero.webp')] bg-center bg-cover relative before:absolute before:inset-0 before:bg-black/40 before:content-['']">
       <div className="wrapper container mx-auto relative z-10">
         <nav className="flex flex-col lg:flex-row gap-3 lg:items-center lg:mb-8">
           <div className="flex items-center justify-between mb-8 lg:mb-0 md:mb-8 grow">
