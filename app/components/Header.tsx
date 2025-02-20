@@ -31,21 +31,23 @@ export default function Header({ title }: { title: string }) {
                   alt="Digital Wallet"
                   className="h-4 md:h-auto"
                 />
-                <span className="ml-2">Connect Wallet</span>
+                <span className="ml-2">
+                  {wallet ? "Account" : "Connect Wallet"}
+                </span>
               </button>
             </div>
           </div>
           {wallet && (
             <div
-              className="items-center justify-between lg:justify-start gap-3 mb-6 lg:mb-0 grow-0"
+              className="items-center flex justify-between lg:justify-start gap-3 mb-6 lg:mb-0 grow-0"
               id="wallet"
             >
-              <div className="p-3 text-white border rounded-2xl md:rounded-3xl py-2 px-3 md:py-3 md:px-4 inline-block text-sm text-center w-36">
+              <div className="p-3 text-white border rounded-2xl md:rounded-3xl py-2 px-3 md:py-3 md:px-4 inline-block text-sm text-center w-40">
                 0x8sw123fsaasx13
               </div>
               <Link
                 href="#"
-                className="p-3 text-white border rounded-2xl md:rounded-3xl py-2 px-6 md:py-[10px] md:px-6 inline-block font-bold text-center w-36 text-sm md:text-base"
+                className="p-3 text-white border rounded-2xl md:rounded-3xl py-2 px-6 md:py-[10px] md:px-6 inline-block font-bold text-center w-40 text-sm md:text-base"
               >
                 Dashboard
               </Link>
