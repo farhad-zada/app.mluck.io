@@ -23,7 +23,7 @@ export default function Header({ title }: { title: string }) {
             <div>
               {wallet ? (
                 <Link
-                  className="bg-gradient-green flex w-fit items-center py-2 px-3 md:py-2 md:px-4 text-white font-semibold text-sm md:text-base rounded-2xl md:rounded-3xl"
+                  className="bg-gradient-green hover:shadow-xl transition-all duration-300 flex w-fit items-center py-2 px-3 md:py-2 md:px-4 text-white font-semibold text-sm md:text-base rounded-2xl md:rounded-3xl"
                   href="/account"
                 >
                   <img
@@ -37,7 +37,7 @@ export default function Header({ title }: { title: string }) {
                 <button
                   onClick={connectWallet}
                   id="connectWallet"
-                  className="bg-gradient-green flex w-fit items-center py-2 px-3 md:py-2 md:px-4 text-white font-semibold text-sm md:text-base rounded-2xl md:rounded-3xl"
+                  className="bg-gradient-green hover:shadow-xl transition-all duration-300 flex w-fit items-center py-2 px-3 md:py-2 md:px-4 text-white font-semibold text-sm md:text-base rounded-2xl md:rounded-3xl"
                 >
                   <img
                     src="/assets/icon-digital-wallet.svg"

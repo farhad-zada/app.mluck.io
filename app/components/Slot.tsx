@@ -33,10 +33,10 @@ export default function Slot() {
                 <div className="font-medium text-xl mb-4">Selected Slot:</div>
                 <div className="font-semibold text-4xl mb-9">3 of 981</div>
                 <div className="flex items-center justify-center ">
-                  <div className="flex items-start justify-between w-full max-w-80">
-                    <select name="currency" id="currency">
-                      <option value="USDT">USDT</option>
-                      <option value="USDC">USDC</option>
+                  <div className="flex items-center justify-between w-full max-w-80">
+                    <select className="bg-white border border-theme-green text-theme-green rounded-xl px-3 py-2 focus:outline-theme-green" name="currency" id="currency">
+                      <option className="checked:text-theme-green text-black" value="USDT">USDT</option>
+                      <option className="checked:text-theme-green text-black" value="USDC">USDC</option>
                       <option disabled value="$Mluck">
                         $MLUCK
                       </option>
@@ -44,7 +44,7 @@ export default function Slot() {
                     <span className="font-medium text-2xl">100$</span>
                   </div>
                 </div>
-                <button className="bg-gradient-green text-white rounded-3xl py-2 px-8 mt-9">
+                <button className="bg-gradient-green hover:shadow-xl transition-all duration-300 text-white rounded-3xl py-2 px-8 mt-9">
                   Proceed
                 </button>
               </div>

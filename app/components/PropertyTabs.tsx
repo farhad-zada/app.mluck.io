@@ -117,8 +117,8 @@ export default function PropertyTabs() {
               <li key={city}>
                 <button
                   onClick={() => setActiveTab(city)}
-                  className={`w-36 py-2 rounded-xl text-black bg-[#ECECEC4B] text-center font-medium ${
-                    activeTab === city ? "bg-theme-green text-white" : ""
+                  className={`w-36 py-2 rounded-xl text-black bg-[#ECECEC4B] text-center font-medium hover:bg-[#ECECEC] transition-all duration-300 ${
+                    activeTab === city ? "bg-theme-green text-white hover:bg-theme-green-hover" : ""
                   }`}
                 >
                   {city.charAt(0).toUpperCase() + city.slice(1)}
@@ -219,7 +219,7 @@ export default function PropertyTabs() {
                   <div className="text-center">
                     <Link
                       href={`/slot/${property.id}`}
-                      className="text-white hover:animate-hover-move bg-gradient-green py-3 px-8 font-semibold inline-block rounded-3xl mt-8"
+                      className="text-white hover:shadow-xl transition-all duration-300 bg-gradient-green py-3 px-8 font-semibold inline-block rounded-3xl mt-8"
                     >
                       Purchase Now
                     </Link>

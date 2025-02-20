@@ -83,7 +83,7 @@ export default function Account() {
                         {item.income} USDT
                       </span>
                     </div>
-                    <button className="bg-gradient-green py-2 text-white rounded-3xl">
+                    <button className="bg-gradient-green hover:shadow-xl transition-all duration-300 py-2 text-white rounded-3xl">
                       Claim
                     </button>
                   </div>
@@ -97,7 +97,7 @@ export default function Account() {
                 <span>Total income:</span>
                 <b className="font-semibold italic ml-4">{data.totalIncome} USDT</b>
               </div>
-              <button className="bg-gradient-green rounded-3xl text-white py-1 mt-3 font-semibold text-base md:text-2xl">
+              <button className="bg-gradient-green hover:shadow-xl transition-all duration-300 rounded-3xl text-white py-1 mt-3 font-semibold text-base md:text-2xl">
                 Claim All
               </button>
             </div>

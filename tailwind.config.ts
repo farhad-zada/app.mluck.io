@@ -13,6 +13,7 @@ export default {
         foreground: "var(--foreground)",
         "grey-10": "#E9FFF2",
         "theme-green": "#2BD170",
+        "theme-green-hover": "#1BB95D",
       },
       backgroundImage: {
         "gradient-green": "linear-gradient(90deg, #1BB95D 0%, #2BD170 100%)",
