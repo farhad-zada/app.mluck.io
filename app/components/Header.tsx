@@ -21,20 +21,32 @@ export default function Header({ title }: { title: string }) {
               <img className="w-20" src="/assets/logo.svg" alt="Mluck Logo" />
             </Link>
             <div>
-              <button
-                onClick={connectWallet}
-                id="connectWallet"
-                className="bg-gradient-green flex w-fit items-center py-2 px-3 md:py-2 md:px-4 text-white font-semibold text-sm md:text-base rounded-2xl md:rounded-3xl"
-              >
-                <img
-                  src="/assets/icon-digital-wallet.svg"
-                  alt="Digital Wallet"
-                  className="h-4 md:h-auto"
-                />
-                <span className="ml-2">
-                  {wallet ? "Account" : "Connect Wallet"}
-                </span>
-              </button>
+              {wallet ? (
+                <Link
+                  className="bg-gradient-green flex w-fit items-center py-2 px-3 md:py-2 md:px-4 text-white font-semibold text-sm md:text-base rounded-2xl md:rounded-3xl"
+                  href="/account"
+                >
+                  <img
+                    src="/assets/icon-digital-wallet.svg"
+                    alt="Digital Wallet"
+                    className="h-4 md:h-auto"
+                  />
+                  <span className="ml-2">Account</span>
+                </Link>
+              ) : (
+                <button
+                  onClick={connectWallet}
+                  id="connectWallet"
+                  className="bg-gradient-green flex w-fit items-center py-2 px-3 md:py-2 md:px-4 text-white font-semibold text-sm md:text-base rounded-2xl md:rounded-3xl"
+                >
+                  <img
+                    src="/assets/icon-digital-wallet.svg"
+                    alt="Digital Wallet"
+                    className="h-4 md:h-auto"
+                  />
+                  <span className="ml-2">Connect Wallet</span>
+                </button>
+              )}
             </div>
           </div>
           {wallet && (
@@ -46,7 +58,7 @@ export default function Header({ title }: { title: string }) {
                 0x8sw123fsaasx13
               </div>
               <Link
-                href="#"
+                href="/dashboard"
                 className="p-3 text-white border rounded-2xl md:rounded-3xl py-2 px-6 md:py-[6px] md:px-6 inline-block font-bold text-center w-40 text-sm md:text-base"
               >
                 Dashboard
