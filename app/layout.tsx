@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="light">
-      <body className={`${poppins.variable} antialiased`}>{children}</body>
+      <body className={`${poppins.variable} antialiased bg-[url('/assets/bg-main.svg')] min-h-[100vh] bg-contain bg-repeat-y bg-top`}>{children}</body>
     </html>
   );
 }
