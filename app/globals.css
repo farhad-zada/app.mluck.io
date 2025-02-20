@@ -20,6 +20,22 @@ body {
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
 }
 
-html {
-  color-scheme: light;
+html,
+body {
+  forced-color-adjust: none;
+  color-scheme: light dark;
+  -webkit-color-scheme: light dark;
+
+  /* Explicitly set background and text colors */
+  background-color: white;
+  color: black;
+}
+
+/* Remove the dark mode media query if you want to enforce light mode strictly */
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
 }
