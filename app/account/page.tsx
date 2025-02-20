@@ -92,7 +92,7 @@ export default function Account() {
             ))}
           </div>
           <div className="flex justify-center">
-            <div className="flex flex-col items-stretch w-full lg:w-fit">
+            <div className="flex flex-col items-stretch lg:w-fit">
               <div className="text-2xl flex justify-between">
                 <span>Total income:</span>
                 <b className="font-semibold italic ml-4">{data.totalIncome} USDT</b>
