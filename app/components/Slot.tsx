@@ -14,17 +14,17 @@ export default function Slot() {
               <div className="grid grid-cols-3 gap-8 auto-rows-fr w-full col-span-3">
                 <img
                   src="/assets/property.webp"
-                  className="aspect-[2/1] object-cover rounded-2xl col-span-3 lg:col-span-1"
+                  className="aspect-[2/1] object-cover w-full rounded-2xl col-span-3 lg:col-span-1"
                   alt="Property name"
                 />
                 <img
                   src="/assets/property.webp"
-                  className="aspect-[2/1] object-cover rounded-2xl col-span-2 lg:col-span-1 h-[calc((100vw_-_55px)_/_2)] max-h-[321.5px] md:h-[calc((100vw_-_240px)_/_2)] md:max-h-[384px] lg:h-auto lg:max-h-none"
+                  className="aspect-[2/1] object-cover w-full rounded-2xl col-span-2 lg:col-span-1 h-[calc((100vw_-_55px)_/_2)] max-h-[321.5px] md:h-[calc((100vw_-_240px)_/_2)] md:max-h-[384px] lg:h-auto lg:max-h-none"
                   alt="Property name"
                 />
                 <img
                   src="/assets/property.webp"
-                  className="aspect-[2/1] object-cover rounded-2xl col-span-1 lg:col-span-1 h-[calc((100vw_-_55px)_/_2)] max-h-[321.5px] md:h-[calc((100vw_-_240px)_/_2)] md:max-h-[384px] lg:h-auto lg:max-h-none"
+                  className="aspect-[2/1] object-cover w-full rounded-2xl col-span-1 lg:col-span-1 h-[calc((100vw_-_55px)_/_2)] max-h-[321.5px] md:h-[calc((100vw_-_240px)_/_2)] md:max-h-[384px] lg:h-auto lg:max-h-none"
                   alt="Property name"
                 />
               </div>
